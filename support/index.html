@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hjelp – LeashBoard</title>
+<meta name="description" content="Hjelp og kontakt for LeashBoard, appen som fordeler hundeturene i familien.">
+<link rel="icon" href="../icon.jpg">
+<style>
+  :root {
+    --bg: #F7F1E6;
+    --card: #FFFCF6;
+    --sand: #E9DFC9;
+    --ink: #1F2A26;
+    --muted: #55615C;
+    --green: #2F5D50;
+    --orange: #E8833A;
+    --line: #E2D7BF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121A16;
+      --card: #1C2622;
+      --sand: #232E29;
+      --ink: #EEE7DA;
+      --muted: #A9B3AE;
+      --green: #7FB8A3;
+      --orange: #F0975A;
+      --line: #2C3833;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+  header img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+  h1 { font-size: 30px; line-height: 1.15; margin: 0; }
+  .lang { color: var(--muted); font-size: 15px; margin: 0 0 32px; }
+  .lang a { color: var(--green); }
+  h2 { font-size: 21px; margin: 36px 0 10px; }
+  p, li { margin: 0 0 12px; }
+  a { color: var(--green); }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 4px 18px;
+    margin: 12px 0 20px;
+  }
+  .row { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .row:last-child { border-bottom: 0; }
+  .row strong { display: block; }
+  .row span { color: var(--muted); font-size: 15px; }
+  .promise {
+    background: var(--sand);
+    border-radius: 18px;
+    padding: 16px 18px;
+    margin: 20px 0;
+  }
+  .promise p { margin: 0; }
+  details {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 0 18px;
+    margin: 0 0 10px;
+  }
+  summary { cursor: pointer; font-weight: 600; padding: 14px 0; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; float: right; color: var(--muted); font-weight: 400; }
+  details[open] summary::after { content: "–"; }
+  details p:last-child { padding-bottom: 6px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 56px 0 8px; }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="../icon.jpg" alt="">
+    <h1>Hjelp med LeashBoard</h1>
+  </header>
+  <p class="lang">Sist oppdatert 27. september 2026 · <a href="#english">English below</a></p>
+
+  <p>LeashBoard fordeler hundeturene i familien med en turnus, viser hvem som faktisk gikk, og gjør det litt gøyere med poeng og badges.</p>
+
+  <div class="promise">
+    <p><strong>Trenger du hjelp?</strong> Send en e-post til <a href="mailto:eiriklie@hotmail.com?subject=LeashBoard">eiriklie@hotmail.com</a>. Skriv gjerne hva du prøvde å gjøre, og hvilken iPhone og iOS-versjon du har.</p>
+  </div>
+
+  <h2>Vanlige spørsmål</h2>
+  <details>
+    <summary>Hvordan kommer familien i gang?</summary>
+    <p>Én lager flokken med hunden i appen. Under <strong>Flokken</strong> kan du invitere de andre med en kode som KAOS-1234. Koden virker for én person i 7 dager. Barn og andre uten telefon kan legges inn som profil uten telefon.</p>
+  </details>
+  <details>
+    <summary>Hvordan setter vi opp turnusen?</summary>
+    <p>Under <strong>Flokken → Turnus</strong> velger dere tidene for turene (for eksempel morgen, ettermiddag og kveld) og hvem som har hvilken dag. Turnusen kan gå hver uke eller annenhver uke. Vil dere bare logge turer uten turnus, velg <strong>Bare logging</strong>.</p>
+  </details>
+  <details>
+    <summary>Hvordan registrerer jeg en tur?</summary>
+    <p>Trykk <strong>Start tur</strong> på Hjem. Appen tar opp ruta med GPS, også med låst skjerm, og henter været. Turen lagres på telefonen underveis, så den overlever at appen lukkes eller at du mister nettet. De andre ser at du er ute.</p>
+  </details>
+  <details>
+    <summary>Jeg glemte å starte turen. Hva gjør jeg?</summary>
+    <p>Åpne <strong>Turer</strong> og trykk <strong>+</strong> for å føre inn turen i ettertid. En tur uten GPS må godkjennes av en annen i flokken, og godkjennes av seg selv etter 12 timer.</p>
+  </details>
+  <details>
+    <summary>Når får jeg påminnelser?</summary>
+    <p>Du får en påminnelse 30 minutter før din tur går ut, hvis ingen har gått ennå. Er noen ute med hunden, sendes ingen påminnelse. Tar noen andre turen din, får du beskjed.</p>
+  </details>
+  <details>
+    <summary>Varslene kommer ikke. Hva sjekker jeg?</summary>
+    <p>Sjekk at varsler er slått på for LeashBoard i iOS-innstillingene, og under <strong>Min profil</strong> i appen (avataren oppe til høyre på Hjem). Der velger du også bjeffelyd for liten, mellomstor eller stor hund, eller vanlig lyd.</p>
+  </details>
+  <details>
+    <summary>Hvordan regnes poengene?</summary>
+    <p>Hver tur gir 10 poeng, pluss ekstra for lange turer, regn eller snø, kulde, varme eller sterk vind, tidlig morgen eller sen kveld, og for å ta en tur for en annen. Poengene og antall turer vises på <strong>LeashBoard</strong>.</p>
+  </details>
+  <details>
+    <summary>Hvordan fjerner jeg noen fra flokken?</summary>
+    <p>Under <strong>Flokken</strong>, trykk på medlemmet og velg <strong>Fjern fra flokken</strong>. Turene de har gått, blir stående som tidligere medlem, så statistikken ikke endres.</p>
+  </details>
+  <details>
+    <summary>Hvordan sletter jeg kontoen min?</summary>
+    <p>Trykk på avataren din oppe til høyre på Hjem, og velg <strong>Slett kontoen min</strong>. Les mer i <a href="../personvern/">personvernerklæringen</a>.</p>
+  </details>
+  <details>
+    <summary>Kan jeg bytte språk?</summary>
+    <p>Appen følger språket på telefonen. Du kan velge språk for LeashBoard alene i iOS-innstillingene under <strong>LeashBoard → Språk</strong>. Appen finnes på norsk og engelsk.</p>
+  </details>
+
+  <h2>Personvern</h2>
+  <p>Ingen reklame og ingen sporing. Les hva appen lagrer i <a href="../personvern/">personvernerklæringen</a>.</p>
+
+  <hr id="english">
+
+  <h1>LeashBoard help</h1>
+  <p class="lang">Last updated 27 September 2026</p>
+
+  <p>LeashBoard shares out the family's dog walks with a schedule, shows who actually walked, and makes it a bit more fun with points and badges.</p>
+
+  <div class="promise">
+    <p><strong>Need help?</strong> Email <a href="mailto:eiriklie@hotmail.com?subject=LeashBoard">eiriklie@hotmail.com</a>. It helps to say what you were trying to do, and which iPhone and iOS version you have.</p>
+  </div>
+
+  <h2>Common questions</h2>
+  <details>
+    <summary>How does the family get started?</summary>
+    <p>One person creates the pack with the dog in the app. Under <strong>Pack</strong> you can invite the others with a code like KAOS-1234. The code works for one person for 7 days. Children and others without a phone can be added as a profile without a phone.</p>
+  </details>
+  <details>
+    <summary>How do we set up the schedule?</summary>
+    <p>Under <strong>Pack → Schedule</strong> you choose the times for walks (for example morning, afternoon and evening) and who has which day. The schedule can repeat every week or every other week. To just log walks without a schedule, choose <strong>Log only</strong>.</p>
+  </details>
+  <details>
+    <summary>How do I record a walk?</summary>
+    <p>Tap <strong>Start a walk</strong> on Home. The app records the route with GPS, also with the screen locked, and gets the weather. The walk is saved on the phone as you go, so it survives the app closing or losing the connection. The others can see that you are out.</p>
+  </details>
+  <details>
+    <summary>I forgot to start the walk. What do I do?</summary>
+    <p>Open <strong>Walks</strong> and tap <strong>+</strong> to log the walk afterwards. A walk without GPS must be approved by someone else in the pack, and is approved automatically after 12 hours.</p>
+  </details>
+  <details>
+    <summary>When do I get reminders?</summary>
+    <p>You get a reminder 30 minutes before your walk runs out, if nobody has walked yet. If someone is out with the dog, no reminder is sent. If someone else takes your walk, you are told.</p>
+  </details>
+  <details>
+    <summary>Notifications don't arrive. What should I check?</summary>
+    <p>Check that notifications are on for LeashBoard in the iOS Settings app, and under <strong>My profile</strong> in the app (your avatar at the top right of Home). That is also where you choose a bark for a small, medium or large dog, or the normal sound.</p>
+  </details>
+  <details>
+    <summary>How are points counted?</summary>
+    <p>Every walk gives 10 points, plus extra for long walks, rain or snow, cold, heat or strong wind, early mornings or late evenings, and for taking a walk for someone else. Points and walks are shown on <strong>LeashBoard</strong>.</p>
+  </details>
+  <details>
+    <summary>How do I remove someone from the pack?</summary>
+    <p>Under <strong>Pack</strong>, tap the member and choose <strong>Remove from the pack</strong>. Their walks stay as a former member, so the statistics do not change.</p>
+  </details>
+  <details>
+    <summary>How do I delete my account?</summary>
+    <p>Tap your avatar at the top right of Home, and choose <strong>Delete my account</strong>. Read more in the <a href="../personvern/#english">privacy policy</a>.</p>
+  </details>
+  <details>
+    <summary>Can I change the language?</summary>
+    <p>The app follows the phone's language. You can choose a language for LeashBoard alone in the iOS Settings app under <strong>LeashBoard → Language</strong>. The app is available in English and Norwegian.</p>
+  </details>
+
+  <h2>Privacy</h2>
+  <p>No ads and no tracking. See what the app stores in the <a href="../personvern/#english">privacy policy</a>.</p>
+
+  <footer>LeashBoard · Laget for Kaos og flokken hans</footer>
+</main>
+</body>
+</html>
