@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Invitasjon – LeashBoard</title>
-<meta name="description" content="Du er invitert til en flokk på LeashBoard.">
+<title>Invitasjon – Pawtur</title>
+<meta name="description" content="Du er invitert til en flokk på Pawtur.">
 <link rel="icon" href="../icon.jpg">
 <style>
   :root {
@@ -116,18 +116,18 @@
   </header>
 
   <div id="invite">
-    <p data-nb="Noen i familien vil at du skal være med og gå tur med hunden i LeashBoard. Dette er koden din:" data-en="Someone in your family wants you to share the dog walks in LeashBoard. This is your code:">Noen i familien vil at du skal være med og gå tur med hunden i LeashBoard. Dette er koden din:</p>
+    <p data-nb="Noen i familien vil at du skal være med og gå tur med hunden i Pawtur. Dette er koden din:" data-en="Someone in your family wants you to share the dog walks in Pawtur. This is your code:">Noen i familien vil at du skal være med og gå tur med hunden i Pawtur. Dette er koden din:</p>
     <div class="code" id="code"></div>
     <button class="button secondary" id="copy" type="button" data-nb="Kopier koden" data-en="Copy the code">Kopier koden</button>
     <p class="note" id="copied" aria-live="polite"></p>
 
     <h2 data-nb="Slik blir du med" data-en="How to join">Slik blir du med</h2>
     <ol>
-      <li data-nb="Last ned LeashBoard. Koden kopieres når du trykker." data-en="Get LeashBoard. The code is copied when you tap.">Last ned LeashBoard. Koden kopieres når du trykker.</li>
+      <li data-nb="Last ned Pawtur. Koden kopieres når du trykker." data-en="Get Pawtur. The code is copied when you tap.">Last ned Pawtur. Koden kopieres når du trykker.</li>
       <li data-nb="Åpne appen og logg inn med Apple." data-en="Open the app and sign in with Apple.">Åpne appen og logg inn med Apple.</li>
       <li data-nb="Trykk «Jeg har en invitasjon», og så «Lim inn»." data-en="Tap “I have an invite”, then “Paste”.">Trykk «Jeg har en invitasjon», og så «Lim inn».</li>
     </ol>
-    <a class="button primary" id="download" href="#" data-nb="Last ned LeashBoard" data-en="Get LeashBoard">Last ned LeashBoard</a>
+    <a class="button primary" id="download" href="#" data-nb="Last ned Pawtur" data-en="Get Pawtur">Last ned Pawtur</a>
     <p class="note" id="testing" hidden data-nb="Appen er i testing ennå. Be den som inviterte deg om lenken til TestFlight." data-en="The app is still being tested. Ask the person who invited you for the TestFlight link.">Appen er i testing ennå. Be den som inviterte deg om lenken til TestFlight.</p>
     <a class="button secondary" id="open" href="#" data-nb="Jeg har appen – åpne invitasjonen" data-en="I have the app – open the invite">Jeg har appen – åpne invitasjonen</a>
     <p class="note" data-nb="Koden virker for én person i 7 dager." data-en="The code works for one person for 7 days.">Koden virker for én person i 7 dager.</p>
@@ -147,7 +147,7 @@
   const lang = /^(nb|no|nn)\b/i.test(navigator.language || "") ? "nb" : "en";
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-" + lang + "]").forEach(el => { el.textContent = el.dataset[lang]; });
-  if (lang === "en") document.title = "Invite – LeashBoard";
+  if (lang === "en") document.title = "Invite – Pawtur";
 
   // The code is in the fragment (#KAOS-1234), so it never reaches the server.
   const raw = decodeURIComponent(location.hash.slice(1)).trim().toUpperCase();
